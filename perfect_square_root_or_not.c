@@ -7,10 +7,9 @@ int main()
     {
         if(n==i*i)
         {
-         c=c+1;
-         break;
+           c=c+1;
+           break;
         }
-        
     }
     if(c==1)
     {
