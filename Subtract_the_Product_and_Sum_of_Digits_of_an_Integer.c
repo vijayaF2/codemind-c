@@ -1,22 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int n,r,s=0,p=1;
+    int n,sum=0,prod=1,r;
     scanf("%d",&n);
     while(n>0)
     {
         r=n%10;
-        s=s+r;
-        p=p*r;
+        prod=prod*r;
+        sum=sum+r;
         n=n/10;
     }
-    if(s>p)
-    {
-        printf("%d",s-p);
-    }
+    if(sum>prod)
+    printf("%d",sum-prod);
     else
-    {
-        printf("%d",p-s);
-    }
-    
+    printf("%d",prod-sum);
+    return 0;
 }
+    
+    
+    
+    
+    
+    
